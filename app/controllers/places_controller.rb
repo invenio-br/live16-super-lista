@@ -1,6 +1,6 @@
 class PlacesController < ApplicationController
   def index
-    @places = Place.order(:name)
+    @places = Place.actives.order(:name)
   end
 
   def show
