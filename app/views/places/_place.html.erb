@@ -1,0 +1,8 @@
+<div class="card">
+  <h5 class="card-header"><%= place.name %></h5>
+  <div class="card-body">
+    <h5 class="card-title"><%= place.address %></h5>
+    <p class="card-text"><%= place.description %></p>
+    <%= link_to "Saiba Mais", place_path(place), class: "btn btn-primary" %>
+  </div>
+</div>
